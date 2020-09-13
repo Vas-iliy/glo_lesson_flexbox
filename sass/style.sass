@@ -1,8 +1,70 @@
 *
   box-sizing: border-box
+  margin: 0
 body
   font-family: 'Roboto', serif
-  background-color: #c3f0f3
 .container
   display: flex
   width: 1140px
+  align-items: center
+  margin: auto
+.main
+  background-color: #c3f0f3
+  &-text
+    margin:
+      top: 183px
+      bottom: 79px
+    width: 750px
+    $color:#7c6db0
+    &__title
+      font:
+        size: 60px
+        weight: 400
+      color: $color
+      margin-bottom: 44px
+    $high:71px
+    &-city
+      background-color: $color
+      height: $high
+      width: 408px
+      text-align: center
+      color: white
+      margin-bottom: 93px
+      font:
+        size: 36px
+        weight: 200
+    &__icon
+      display: flex
+      width: 390px
+      height: $high
+      align-items: center
+      margin-bottom: 120px
+      img
+        margin-right: 30px
+      p
+        font-size: 22px
+    &-buttons
+      display: flex
+      margin-bottom: 80px
+$color_btn:#01c4e0
+$w: 360px
+$h: 80px
+.search
+  border: none
+  background-color: $color_btn
+  color: white
+  font-size: 22px
+  height: $h
+  width: $w
+  margin-right: 30px
+.video
+  border: 2px solid $color_btn
+  color: $color_btn
+  font-size: 22px
+  height: $h
+  width: $w
+
+
+
+
+
