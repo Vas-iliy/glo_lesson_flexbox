@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", serif;
+  background-color: #c3f0f3;
+}
+
+.container {
+  display: flex;
+  width: 1140px;
+}
