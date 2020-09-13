@@ -1,0 +1,19 @@
+.block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 150px;
+  border: 1px solid #000;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+  margin: auto;
+}
+
+.element {
+  background-color: gray;
+  color: aliceblue;
+  padding: 10px;
+  border: 1px solid rebeccapurple;
+}

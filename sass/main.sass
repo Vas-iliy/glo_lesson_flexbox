@@ -1,0 +1,48 @@
+.block
+  display: flex
+  height: 150px
+  border: 1px solid #000
+  //justify-content: flex-end //контент вконец
+  //justify-content: space-around //контент выравнивается так, что между его элементами всегда равное расстояние
+  justify-content: space-between // все как и в прошлом случае, только контент прилегает к краям
+
+  //по умолчанию занимают всю высоту
+  //align-items: flex-start //занимают столько место сколько положено и прилегают к верху
+  //align-items: flex-end //занимают столько место сколько положено и прилегают к низу
+  //align-items: center //занимают столько место сколько положено и прилегают вцентре
+  //align-items: baseline //занимают столько место сколько положено и прилегают к базовой линии контейнера
+  //align-items: stretch //растягивается так, чтобы полностью заполнить контейнер
+
+  //flex-direction: row //по умолчанию элементы выстраиваются в строку
+  //flex-direction: row-reverse //по умолчанию элементы выстраиваются в строку, но в обратном порядке и с другой стороны
+  //flex-direction: column //по умолчанию элементы выстраиваются в столбец
+  //flex-direction: column-reverse //по умолчанию элементы выстраиваются в столбец, но в обратном порядке и с другой стороны
+
+  //flex-wrap: nowrap //стоит по умолчанию, нельзя переполнять родителя
+  //flex-wrap: wrap //можно переполнять родителя, переход на следующюю строку
+  //flex-wrap: wrap-reverse //можно переполнять родителя, переход на следующюю строку, но с другой стороны
+
+  //flex-flow: column wrap //flex-wrap+flex-direction
+
+  //align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch //только работает на контент
+
+  width: 90%
+  margin: auto
+.element
+  background-color: gray
+  color: aliceblue
+  padding: 10px
+
+  //&-3
+    order: 1 //становится 4 элементом
+
+  border: 1px solid rebeccapurple
+
+  //flex-basis: 10% //базовая ширина
+  //&-3
+    //flex-grow: 1 //увеличение элемента, считается от базовой ширины
+    //flex-shrink: 5 //сужение элемента, считается от базовой ширины
+
+  //&-3
+    align-self: flex-start //для одного элемента, чтобы он выделялся из общего потока
+
