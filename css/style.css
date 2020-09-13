@@ -9,17 +9,19 @@ body {
 
 .container {
   display: flex;
-  width: 1140px;
+  width: 1400px;
   align-items: center;
-  margin: auto;
+  margin-left: 155px;
+  margin-right: 115px;
 }
 
 .main {
   background-color: #c3f0f3;
+  width: 85%;
 }
 .main-text {
   margin-top: 183px;
-  margin-bottom: 79px;
+  margin-bottom: 80px;
   width: 750px;
 }
 .main-text__title {
@@ -53,7 +55,9 @@ body {
 }
 .main-text-buttons {
   display: flex;
-  margin-bottom: 80px;
+}
+.main-img {
+  transform: translate(-180px, 11px);
 }
 
 .search {
